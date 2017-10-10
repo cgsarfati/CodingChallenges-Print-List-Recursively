@@ -13,6 +13,16 @@ For example::
 def print_recursively(lst):
     """Print items in the list, using recursion."""
 
+    # [1, 2, 3] --> [2,3] --> [3]
+    # list slicing involved... lst[1:]
+
+    # BASE CASE
+        # when lst empty, stop
+
+
+    # PROGRESSION
+        # print lst[0], then recurse w/ list slicing
+
 
 if __name__ == '__main__':
     import doctest
