@@ -13,15 +13,20 @@ For example::
 def print_recursively(lst):
     """Print items in the list, using recursion."""
 
-    # [1, 2, 3] --> [2,3] --> [3]
+    # e.g. [1, 2, 3] --> [2,3] --> [3]
     # list slicing involved... lst[1:]
 
     # BASE CASE
         # when lst empty, stop
-
-
     # PROGRESSION
         # print lst[0], then recurse w/ list slicing
+
+    # while lst not empty
+    if lst:
+        # print 1st item
+        print lst[0]
+        # slice, recurse
+        print_recursively(lst[1:])
 
 
 if __name__ == '__main__':
